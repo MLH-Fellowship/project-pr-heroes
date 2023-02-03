@@ -10,12 +10,6 @@
 - [ ] You have made corresponding changes to the documentation. 📚
 - [ ] Your branch name follows [deepsource naming conventions](https://deepsource.io/blog/git-branch-naming-conventions/). 📂
 - [ ] The commit message follows our commit conventions. 💻
-<!-- [ISSUE NUMBER] ACTION : MESSAGE
-e.g.
-[11] Add: experience component
-[11] Update: README with documentation about experience component.
-Some other Actions: Remove, Fix, Typo. -->
-
 <!-- Future considerations -->
 <!-- - [ ] Your code follows the style guidelines of this project -->
 <!-- - [ ] You have added tests that prove your fix is effective or that your feature works-->
