@@ -4,7 +4,17 @@ import os
 from .models.experience import Experience
 from .models.education import Education
 from .models.hobbies import Hobbies
+from .models.about import About
 from .static.sample_data.data import data
+
+aboutme = []
+for about in data['about']:
+    aboutme.append(About(about['email'],
+                            about['twitter'],
+                            about['linkedin'],
+                            about['description']
+                            )
+                        )
 
 experiences = []
 for experience in data['experience']:
@@ -38,5 +48,5 @@ def index():
     return render_template('main.html', 
                            title="MLH Fellow", 
                            url=os.getenv("URL"),
-                           type='Hobbies', 
-                           elements=hobbies)
+                           type='About', 
+                           elements=aboutme)

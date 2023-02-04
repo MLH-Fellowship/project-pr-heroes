@@ -5,7 +5,9 @@
 <div class="col-md-6 mx-auto">
     <ul>
         {% for elem in elements %}
-            {% if type == "Experience" %}
+            {% if type == "About" %}
+                {% include "about.html" %}    
+            {% elif type == "Experience" %}
                 {% include "experience.html" %}
             {% elif type == "Education" %}
                 {% include "education.html" %}
