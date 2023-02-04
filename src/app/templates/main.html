@@ -2,14 +2,18 @@
 {% block content %}
 
 <h1 class="mb-4"> {{ type }} </h1>
-<ul>
-    {% for elem in elements %}
-        {% if type == "Experience" %}
-            {% include "experience.html" %}
-        {% elif type == "Education" %}
-            {% include "education.html" %}
-        {% endif %}
-    {% endfor %}
-</ul>
+<div class="col-md-6 mx-auto">
+    <ul>
+        {% for elem in elements %}
+            {% if type == "Experience" %}
+                {% include "experience.html" %}
+            {% elif type == "Education" %}
+                {% include "education.html" %}
+            {% elif type == "Hobbies" %}
+                {% include "hobbies.html" %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
 
 {% endblock content %}
