@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, url_for
 from app import app
 import os
 from .models.experience import Experience
@@ -51,3 +51,30 @@ def index():
                            url=os.getenv("URL"),
                            type='About', 
                            elements=aboutme)
+
+@app.route('/experience')
+def experience():
+    return render_template('main.html', 
+                           title="MLH Fellow",
+                           photoUrl=data['photourl'],
+                           url=os.getenv("URL"),
+                           type='Experience', 
+                           elements=experiences)
+
+@app.route('/education')
+def education():
+    return render_template('main.html', 
+                           title="MLH Fellow",
+                           photoUrl=data['photourl'],
+                           url=os.getenv("URL"),
+                           type='Education', 
+                           elements=educations)
+
+@app.route('/hobbies')
+def hobbie():
+    return render_template('main.html', 
+                           title="MLH Fellow",
+                           photoUrl=data['photourl'],
+                           url=os.getenv("URL"),
+                           type='Hobbies', 
+                           elements=hobbies)
