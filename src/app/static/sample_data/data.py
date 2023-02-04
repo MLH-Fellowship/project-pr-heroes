@@ -1,4 +1,13 @@
 data = {
+        "about": 
+        [
+            {
+                "email":"johndoe@gmail.com",
+                "twitter":"https://twitter.com/johndoe",
+                "linkedin":"https://linkedin.com/in/johndoe",
+                "description":"I am a [profession/title], passionate about [field of interest]. With [number of years/decades] of experience in [related industry/field], I have developed a strong set of skills and a deep understanding of [specific aspect of industry/field]. My mission is to [personal or professional goal], and I strive to make a positive impact in the world through [specific actions/endeavors]."
+            }
+        ],
         "experience": 
         [
             {
