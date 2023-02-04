@@ -3,6 +3,7 @@ from app import app
 import os
 from .models.experience import Experience
 from .models.education import Education
+from .models.hobbies import Hobbies
 from .static.sample_data.data import data
 
 experiences = []
@@ -21,11 +22,21 @@ for education in data['education']:
                                   education['description']
                                   )
                         )
+    
+hobbies = []
+for hobbie in data['hobbies']:
+    hobbies.append(Hobbies(hobbie['name'],
+                           hobbie['description'],
+                           hobbie['url'],
+                           hobbie['alt'],
+                           hobbie['textcolor']
+                            )
+                    )
 
 @app.route('/')
 def index():
     return render_template('main.html', 
                            title="MLH Fellow", 
                            url=os.getenv("URL"),
-                           type='Education', 
-                           elements=educations)
+                           type='Hobbies', 
+                           elements=hobbies)
