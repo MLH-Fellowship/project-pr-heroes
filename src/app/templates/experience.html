@@ -1,0 +1,6 @@
+{% extends "card.html" %} {% block body %}
+    <h5 class="card-title">{{ elem.company }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ elem.position }}</h6>
+    <p>{{ elem.duration }}</p>
+    <p class="card-text">{{ elem.description }}</p>
+{% endblock body %}
