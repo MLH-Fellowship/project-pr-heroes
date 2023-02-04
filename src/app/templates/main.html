@@ -6,6 +6,8 @@
     {% for elem in elements %}
         {% if type == "Experience" %}
             {% include "experience.html" %}
+        {% elif type == "Education" %}
+            {% include "education.html" %}
         {% endif %}
     {% endfor %}
 </ul>
