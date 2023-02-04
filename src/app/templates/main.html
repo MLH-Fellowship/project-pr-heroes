@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1 class="mb-4"> {{ type }} </h1>
+<ul>
+    {% for elem in elements %}
+        {% if type == "Experience" %}
+            {% include "experience.html" %}
+        {% endif %}
+    {% endfor %}
+</ul>
+
+{% endblock content %}
