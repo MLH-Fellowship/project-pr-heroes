@@ -46,7 +46,8 @@ for hobbie in data['hobbies']:
 @app.route('/')
 def index():
     return render_template('main.html', 
-                           title="MLH Fellow", 
+                           title="MLH Fellow",
+                           photoUrl=data['photourl'],
                            url=os.getenv("URL"),
                            type='About', 
                            elements=aboutme)
