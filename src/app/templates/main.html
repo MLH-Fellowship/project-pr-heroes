@@ -2,6 +2,14 @@
 {% block content %}
 
 <h1 class="mb-4 mx-auto"> {{ name }} </h1>
+<div class="nav-content">
+<nav>
+    <a href="{{ url_for('about', name=name) }}">About</a>
+    <a href="{{ url_for('experience', name=name) }}">Experience</a>
+    <a href="{{ url_for('education', name=name) }}">Education</a>
+    <a href="{{ url_for('hobbie', name=name) }}">Hobbies</a>
+</nav>
+</div>
 <h2 class="mb-4"> {{ type }} </h2>
 <div class="col-md-6 mx-auto">
     <ul>

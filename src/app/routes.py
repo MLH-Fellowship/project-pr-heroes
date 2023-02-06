@@ -11,7 +11,7 @@ from .static.sample_data.data import data
 def index():
     return render_template('layout.html',
                            title="MLH Fellow",
-                           photoUrl=data['photourl'],
+                           photoUrl=data['John Doe']['photourl'],
                            url=os.getenv("URL")
                            )
 
@@ -28,7 +28,7 @@ def about(name):
     return render_template('main.html', 
                            title="MLH Fellow",
                            name=name,
-                           photoUrl=data['photourl'],
+                           photoUrl=data[name]['photourl'],
                            url=os.getenv("URL"),
                            type='About', 
                            elements=aboutme)
@@ -46,7 +46,7 @@ def experience(name):
     return render_template('main.html', 
                            title="MLH Fellow",
                            name=name,
-                           photoUrl=data['photourl'],
+                           photoUrl=data[name]['photourl'],
                            url=os.getenv("URL"),
                            type='Experience', 
                            elements=experiences)
@@ -64,7 +64,7 @@ def education(name):
     return render_template('main.html', 
                            title="MLH Fellow",
                            name=name,
-                           photoUrl=data['photourl'],
+                           photoUrl=data[name]['photourl'],
                            url=os.getenv("URL"),
                            type='Education', 
                            elements=educations)
@@ -83,7 +83,7 @@ def hobbie(name):
     return render_template('main.html', 
                            title="MLH Fellow",
                            name=name,
-                           photoUrl=data['photourl'],
+                           photoUrl=data[name]['photourl'],
                            url=os.getenv("URL"),
                            type='Hobbies', 
                            elements=hobbies)
