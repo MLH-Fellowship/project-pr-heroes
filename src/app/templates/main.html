@@ -1,11 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<div class="table-responsive">
-<table class="table">
-  <tr>
-    <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('index') }}">About</a> </h1></td>
-    <td rowspan="5" class="align-middle text-center" style="width: 80%;"><ul>
+<h1 class="mb-4 mx-auto"> {{ name }} </h1>
+<h2 class="mb-4"> {{ type }} </h2>
+<div class="col-md-6 mx-auto">
+    <ul>
         {% for elem in elements %}
             {% if type == "About" %}
                 {% include "about.html" %}    
@@ -17,87 +16,7 @@
                 {% include "hobbies.html" %}
             {% endif %}
         {% endfor %}
-    </ul></td>
-  </tr>
-  <tr>
-    <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('experience') }}">Experience</a> </h1></td>
-  </tr>
-  <tr>
-    <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('education') }}">Education</a> </h1></td>
-  </tr>
-  <tr>
-    <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('hobbie') }}">Hobbies</a> </h1></td>
-  </tr>
-  <tr>
-    <td class="align-middle text-center"><h1 class="mb-4"> <a href="#">Traveling</a> </h1></td>
-  </tr>
-</table>
-</div>
-
-<div class="table-responsive">
-  <table class="table">
-    <tr>
-      <td rowspan="5" class="align-middle text-center" style="width: 80%;"><ul>
-        {% for elem in elements %}
-            {% if type == "About" %}
-                {% include "about.html" %}    
-            {% elif type == "Experience" %}
-                {% include "experience.html" %}
-            {% elif type == "Education" %}
-                {% include "education.html" %}
-            {% elif type == "Hobbies" %}
-                {% include "hobbies.html" %}
-            {% endif %}
-        {% endfor %}
-    </ul></td>
-      <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('index') }}">About</a> </h1></td>
-    </tr>
-    <tr>
-      <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('experience') }}">Experience</a> </h1></td>
-    </tr>
-    <tr>
-      <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('education') }}">Education</a> </h1></td>
-    </tr>
-    <tr>
-      <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('hobbie') }}">Hobbies</a> </h1></td>
-    </tr>
-    <tr>
-      <td class="align-middle text-center"><h1 class="mb-4"> <a href="#">Traveling</a> </h1></td>
-    </tr>
-  </table>
-</div>
-
-<div class="table-responsive">
-<table class="table">
-  <tr>
-    <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('index') }}">About</a> </h1></td>
-    <td rowspan="5" class="align-middle text-center" style="width: 80%;"><ul>
-        {% for elem in elements %}
-            {% if type == "About" %}
-                {% include "about.html" %}    
-            {% elif type == "Experience" %}
-                {% include "experience.html" %}
-            {% elif type == "Education" %}
-                {% include "education.html" %}
-            {% elif type == "Hobbies" %}
-                {% include "hobbies.html" %}
-            {% endif %}
-        {% endfor %}
-    </ul></td>
-  </tr>
-  <tr>
-    <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('experience') }}">Experience</a> </h1></td>
-  </tr>
-  <tr>
-    <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('education') }}">Education</a> </h1></td>
-  </tr>
-  <tr>
-    <td class="align-middle text-center"><h1 class="mb-4"> <a href="{{ url_for('hobbie') }}">Hobbies</a> </h1></td>
-  </tr>
-  <tr>
-    <td class="align-middle text-center"><h1 class="mb-4"> <a href="#">Traveling</a> </h1></td>
-  </tr>
-</table>
+    </ul>
 </div>
 
 {% endblock content %}
