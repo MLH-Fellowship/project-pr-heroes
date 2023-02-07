@@ -1,0 +1,33 @@
+{% from 'card.html' import card %}
+<div id="team" class="team-section">
+	<div class="team-section-container">
+		<div class="team-section-header">
+			<h1><span>Our</span> <span>Team</span></h1>
+			<hr />
+		</div>
+		<div class="card-container">
+			{% call card() %}
+			<a href="{{ url_for('about', name='Esvin Ruiz') }}"
+				><img
+					src="https://avatars.githubusercontent.com/u/69549001?v=4"
+					class="profile-picture-left profile-picture"
+			/></a>
+			<p class="card-text">Esvin Ruiz</p>
+			{% endcall %} {% call card() %}
+			<a href="{{ url_for('about', name='Oscar Santos') }}"
+				><img
+					src="https://avatars.githubusercontent.com/u/38818848?s=400&u=5a7007b59164f33f774fce16c08ee73ce0e1cdb9&v=4"
+					class="profile-picture-middle profile-picture"
+			/></a>
+			<p class="card-text">Oscar Santos</p>
+			{% endcall %} {% call card() %}
+			<a href="{{ url_for('about', name='Khalil Collins') }}"
+				><img
+					src="https://avatars.githubusercontent.com/u/11954011?v=4"
+					class="profile-picture-right profile-picture"
+			/></a>
+			<p class="card-text">Khalil Collins</p>
+			{% endcall %}
+		</div>
+	</div>
+</div>
