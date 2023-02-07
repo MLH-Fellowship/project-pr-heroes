@@ -1,5 +1,5 @@
+{% macro card(name) -%}
 <div class="card">
-    <div class="card-body">
-        {% block body %}{% endblock body %}
-    </div>
+	<div class="card-body">{{ caller() }}</div>
 </div>
+{%- endmacro %}
