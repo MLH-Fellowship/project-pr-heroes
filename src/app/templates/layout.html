@@ -39,18 +39,47 @@
 	<body>
 		<header class="nav-bar">
 			<div class="nav-content">
-				<a href="/">
-					<div class="nav-logo">
-						<img src="{{ url_for('static', filename='img/logo.svg') }}" />
-					</div>
-				</a>
+			  <a href="/">
+				<div class="nav-logo">
+				  <img src="{{ url_for('static', filename='img/logo.svg') }}" />
+				</div>
+			  </a>
 			</div>
-		</header>
+			<nav class="navbar navbar-expand-lg">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link" href="#team">Team</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+		  </header>
+		  
 
 		<main role="main">
-			<div>{% include 'team.html' %}</div>
+			<div class="header-text">
+				<h1>
+				  <span class="pull"> Pull </span>
+				  <span class="request"> Request </span>
+				  <span class="heroes"> Heroes </span>
+				</h1>
+			  </div>
+			<div>{% include 'team.html' %}</div> 
 		</main>
-
+		
+		<section id="about">
+			<p><h1>About Page</h1></p>
+		</section>
+	
+	
+		
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

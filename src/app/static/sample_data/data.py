@@ -142,6 +142,54 @@ data = {
 
             ]
     },
+     "Esvin Ruiz": {
+        "about": [
+            {
+                "email": "esvinruiz01@gmail.com",
+                "twitter": "https://twitter.com/EsvinRuiz5",
+                "linkedin": "https://www.linkedin.com/in/esv261/",
+                "description": "I am a Research Software Engineer, passionate about empowering students to achieve academic success. With 1 year of experience in Software Engineering, I have developed a strong set of skills and a deep understanding of Research development. My mission is to be a good person and I strive to make a positive impact in the world through my actions."
+            }
+        ],
+        "photourl": "https://ibb.co/vxXmMSY",
+        "experience": [
+            {
+                "company": "Bain Capital",
+                "position": "Application Developer Intern",
+                "duration": "3 Months",
+                "description": "Developed Applications using Python and JavaScript."
+            },
+            {
+                "company": "Hack.Diversity.",
+                "position": "Software Engineer Fellow",
+                "duration": "8 Months",
+                "description": "Built and maintained various web applications."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Wilmington University",
+                "degree": "Bachelor in Computer Science",
+                "tenure": "2020-2025",
+                "description": "Education covering Algorithms, Data Structures, Machine learning and Programming."
+            },
+            {
+                "institution": "Southern New Hampshire University",
+                "degree": "Associate in Business",
+                "tenure": "2022-2023",
+                "description": "Education covering Business Management and Finance."
+            }
+        ],
+        "hobbies": [
+            {
+                "name": "Chess",
+                "description": "Intermediate chess player",
+                "url": "https://ibb.co/DwVCh3v",
+                "alt": "A image of a chess board.",
+                "textcolor": "dark"
+            }
+        ]
+    },
     "John Doe": {
             "about":
             [
