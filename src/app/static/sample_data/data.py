@@ -1,16 +1,16 @@
 data = {
     "Oscar Santos": {
-            "about": 
+        "about":
             [
                 {
-                    "email":"oscar@gmail.com",
-                    "twitter":"https://twitter.com/oscarsantosmu",
-                    "linkedin":"https://linkedin.com/in/oscarsantosmu",
-                    "description":"I am a Mechatronics Engineer, passionate about Cloud Infrastructure, SRE and AI. With [number of years/decades] of experience in [related industry/field], I have developed a strong set of skills and a deep understanding of [specific aspect of industry/field]. My mission is to [personal or professional goal], and I strive to make a positive impact in the world through [specific actions/endeavors]."
+                    "email": "oscar@gmail.com",
+                    "twitter": "https://twitter.com/oscarsantosmu",
+                    "linkedin": "https://linkedin.com/in/oscarsantosmu",
+                    "description": "I am a Mechatronics Engineer, passionate about Cloud Infrastructure, SRE and AI. With [number of years/decades] of experience in [related industry/field], I have developed a strong set of skills and a deep understanding of [specific aspect of industry/field]. My mission is to [personal or professional goal], and I strive to make a positive impact in the world through [specific actions/endeavors]."
                 }
             ],
-            "photourl": "https://avatars.githubusercontent.com/u/38818848?s=400&u=5a7007b59164f33f774fce16c08ee73ce0e1cdb9&v=4",
-            "experience": 
+        "photourl": "https://avatars.githubusercontent.com/u/38818848?s=400&u=5a7007b59164f33f774fce16c08ee73ce0e1cdb9&v=4",
+        "experience":
             [
                 {
                     "company": "VISEO, SAS - Toulouse, France",
@@ -31,7 +31,7 @@ data = {
                     "description": "Worked on electro-pneumatic control systems, microcontrollers programming, development of IoT technologies for biomedical applications and predictive maintenance in manufacturing."
                 }
             ],
-            "education":
+        "education":
             [
                 {
                     "institution": "Universidad de Guanajuato",
@@ -58,7 +58,7 @@ data = {
                     "description": "Intercultural Communication 'Insight Germany - (Ex)Change your Perspectives'"
                 }
             ],
-            "hobbies":
+        "hobbies":
             [
                 {
                     "name": "Electronic Dance Music Producer",
@@ -76,18 +76,84 @@ data = {
                 }
             ]
     },
-    "John Doe": {
-            "about": 
+    "Khalil Collins": {
+            "about":
             [
                 {
-                    "email":"johndoe@gmail.com",
-                    "twitter":"https://twitter.com/johndoe",
-                    "linkedin":"https://linkedin.com/in/johndoe",
-                    "description":"I am a [profession/title], passionate about [field of interest]. With [number of years/decades] of experience in [related industry/field], I have developed a strong set of skills and a deep understanding of [specific aspect of industry/field]. My mission is to [personal or professional goal], and I strive to make a positive impact in the world through [specific actions/endeavors]."
+                    "email": "Collinskhalil@hotmail.com",
+                    "twitter": "None",
+                    "linkedin": "https://www.linkedin.com/in/khalil-collins/",
+                    "description": "I am a Full Stack Software Engineer, passionate about Web Development and Artificial Intellgience. With 2 of experience in Software Engineering, I have developed a strong set of skills and a deep understanding of Web Development. My mission is to create world changing software/websites, learn as much I can about Computer Science, and I strive to make a positive impact in the world through helping others through software or humanitarian work."
                 }
             ],
-            "photourl": "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg",
-            "experience": 
+        "photourl": "https://avatars.githubusercontent.com/u/11954011?v=4",
+            "experience":
+            [
+                {
+                    "company": "Byte Sized Code",
+                    "position": "Software Engineer",
+                    "duration": "1 years",
+                    "description": "Developed various scripts and websites as a freelancer"
+                },
+                {
+                    "company": "Field Advantage",
+                    "position": "Information Technician",
+                    "duration": "5 years",
+                    "description": "Worked with hardware and software on site to upgrade various stores computer infrasturcture "
+                }
+            ],
+        "education":
+            [
+                {
+                    "institution": "Delaware State University",
+                    "degree": "Master of Science in Artificial Intelligence",
+                    "tenure": "2015-2019",
+                    "description": "Education covering algorithms, machine learning and programming."
+                },
+
+            ],
+        "hobbies":
+            [
+                {
+                    "name": "Skateboarding",
+                    "description": "Street and vert ramp skater",
+                    "url": "https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/MA_00658277_vwlk3l.jpg",
+                    "alt": "A photo of a kid riding a skateboard",
+                    "textcolor": "dark"
+                },
+                {
+                    "name": "Music Producer",
+                    "description": "Electronic, trap and hip-hop beat maker",
+                    "url": "https://i0.wp.com/soundprise.com/wp-content/uploads/2020/11/123-min-scaled.jpg?resize=1080%2C675&ssl=1",
+                    "alt": "A photo of a music studio"
+                },                 {
+                    "name": "Biking",
+                    "description": "I love to bike around different parks like central park",
+                    "url": "https://centralparkbikerental.nyc/content/uploads/attractions/5b61c5d8079e4_bike_667994_640.jpg",
+                    "alt": "Central park bike loop",
+                    "textcolor": "dark"
+                },
+                {
+                    "name": "Gaming",
+                    "description": "I'm very passionate about playing competitive video games",
+                    "url": "https://i.pinimg.com/originals/bd/a7/31/bda7319cc3fd803cab5525082988177b.jpg",
+                    "alt": "Fortnite girl with shotgun"
+                }
+
+            ]
+    },
+    "John Doe": {
+            "about":
+            [
+                {
+                    "email": "johndoe@gmail.com",
+                    "twitter": "https://twitter.com/johndoe",
+                    "linkedin": "https://linkedin.com/in/johndoe",
+                    "description": "I am a [profession/title], passionate about [field of interest]. With [number of years/decades] of experience in [related industry/field], I have developed a strong set of skills and a deep understanding of [specific aspect of industry/field]. My mission is to [personal or professional goal], and I strive to make a positive impact in the world through [specific actions/endeavors]."
+                }
+            ],
+        "photourl": "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg",
+            "experience":
             [
                 {
                     "company": "Acme Inc.",
@@ -102,7 +168,7 @@ data = {
                     "description": "Built and maintained various web applications for clients."
                 }
             ],
-            "education":
+        "education":
             [
                 {
                     "institution": "University of Life",
@@ -117,7 +183,7 @@ data = {
                     "description": "Education covering algorithms, programming, operating systems and databases."
                 }
             ],
-            "hobbies":
+        "hobbies":
             [
                 {
                     "name": "Skateboarding",
