@@ -195,4 +195,33 @@ body {
 	color: blue;
  }
 
-  
+ .header-img img,
+      .middle-img img,
+      .bottom-img img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+      }
+
+      .header-img {
+		display: flex;
+		flex-direction: column; justify-content: flex-end;
+		align-items: flex-end;
+		margin-bottom: 40px;
+		
+      }
+
+      .middle-img {
+        display: flex;
+		flex-direction: column; justify-content: flex-end;
+        align-items: left;
+		margin-bottom: 40px; 
+      }
+
+      .bottom-img {
+        display: flex;
+		flex-direction: column; justify-content: flex-end;
+		align-items: flex-end;
+		margin-bottom: 50px; 
+      }
+	 
