@@ -171,3 +171,28 @@ body {
 	font-size: 50px;
 	font-weight: 700;
 }
+.nav-bar .navbar-nav .nav-item .nav-link {
+	color: orange;
+  }
+  .nav-bar {
+	background-color: black;
+  }
+  .header-text {
+	text-align: center;
+	background-color: #000000;
+ }
+ 
+ .pull {
+	color: orange;
+
+ }
+ 
+ .request {
+	color: grey;
+ }
+ 
+ .heroes {
+	color: blue;
+ }
+
+  
