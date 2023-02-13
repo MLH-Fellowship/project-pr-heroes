@@ -5,3 +5,4 @@ __pycache__
 python3-virtualenv
 flask.sqlite
 .DS_Store
+**/templates/map.html
