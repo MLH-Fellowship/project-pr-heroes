@@ -74,6 +74,17 @@ data = {
                     "alt": "A photo of a city taken from the aircraft window",
                     "textcolor": "dark"
                 }
+            ],
+            "locations":
+            [
+                {
+                    "cityname": "Paris, France",
+                    "coordinates": "48.856614,2.352222"
+                },
+                {
+                    "cityname": "Madrid, Spain",
+                    "coordinates": "40.416775,-3.70379"
+                }
             ]
     },
     "Khalil Collins": {
@@ -142,6 +153,13 @@ data = {
                     "textcolor": "white"
                 }
 
+            ],
+        "locations":
+            [
+                {
+                    "cityname": "Dover, Delaware",
+                    "coordinates": "39.158168,-75.524368"
+                }
             ]
     },
      "Esvin Ruiz": {
@@ -189,6 +207,13 @@ data = {
                 "url": "https://i.ibb.co/r576Ynz/CHess.gif",
                 "alt": "A image of a chess board.",
                 "textcolor": "dark"
+            }
+        ],
+        "locations":
+        [
+            {
+                "cityname": "Delaware, New Jersey",
+                "coordinates": "40.430726,-74.944258"
             }
         ]
     },
@@ -241,6 +266,13 @@ data = {
                     "url": "https://images.pexels.com/photos/1769553/pexels-photo-1769553.jpeg",
                     "alt": "A photo of me in the air with my skateboard.",
                     "textcolor": "dark"
+                }
+            ],
+        "locations":
+            [
+                {
+                    "cityname": "Delaware, New Jersey",
+                    "coordinates": "40.430726,-74.944258"
                 }
             ]
     }
