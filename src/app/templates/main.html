@@ -8,6 +8,7 @@
     <a href="{{ url_for('experience', name=name) }}">Experience</a>
     <a href="{{ url_for('education', name=name) }}">Education</a>
     <a href="{{ url_for('hobbie', name=name) }}">Hobbies</a>
+    <a href="{{ url_for('tourism', name=name) }}">Tourism</a>
 </nav>
 </div>
 <h2 class="mb-4 pl-4"> {{ type }} </h2>
@@ -24,6 +25,9 @@
                 {% include "hobbies.html" %}
             {% endif %}
         {% endfor %}
+        {% if type == "Map" %}
+            <iframe class="map", src="{{ url_for('folium_map') }}" width="600" height="600"></iframe>
+        {% endif %}
     </ul>
 </div>
 
