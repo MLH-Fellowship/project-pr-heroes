@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<h1 class="mb-4 mx-auto"> {{ name }} </h1>
+<h1 class="mb-4 pl-4 mx-auto"> {{ name }} </h1>
 <div class="nav-content">
 <nav>
     <a href="{{ url_for('about', name=name) }}">About</a>
@@ -10,8 +10,8 @@
     <a href="{{ url_for('hobbie', name=name) }}">Hobbies</a>
 </nav>
 </div>
-<h2 class="mb-4"> {{ type }} </h2>
-<div class="col-md-6 mx-auto">
+<h2 class="mb-4 pl-4"> {{ type }} </h2>
+<div class="col-md-12 mx-auto">
     <ul>
         {% for elem in elements %}
             {% if type == "About" %}

@@ -6,7 +6,7 @@ data = {
                     "email": "oscar@gmail.com",
                     "twitter": "https://twitter.com/oscarsantosmu",
                     "linkedin": "https://linkedin.com/in/oscarsantosmu",
-                    "description": "I am a Mechatronics Engineer, passionate about Cloud Infrastructure, SRE and AI. With [number of years/decades] of experience in [related industry/field], I have developed a strong set of skills and a deep understanding of [specific aspect of industry/field]. My mission is to [personal or professional goal], and I strive to make a positive impact in the world through [specific actions/endeavors]."
+                    "description": "I am a Mechatronics Engineer, passionate about technology. I have developed a strong set of skills and a deep understanding of SRE, Cloud, AI and IoT. My mission is to upskill and empower people from my local community, and I strive to make a positive impact in the world through sharing content."
                 }
             ],
         "photourl": "https://avatars.githubusercontent.com/u/38818848?s=400&u=5a7007b59164f33f774fce16c08ee73ce0e1cdb9&v=4",
@@ -125,19 +125,21 @@ data = {
                     "name": "Music Producer",
                     "description": "Electronic, trap and hip-hop beat maker",
                     "url": "https://i0.wp.com/soundprise.com/wp-content/uploads/2020/11/123-min-scaled.jpg?resize=1080%2C675&ssl=1",
-                    "alt": "A photo of a music studio"
+                    "alt": "A photo of a music studio",
+                    "textcolor": "white"
                 },                 {
                     "name": "Biking",
                     "description": "I love to bike around different parks like central park",
                     "url": "https://centralparkbikerental.nyc/content/uploads/attractions/5b61c5d8079e4_bike_667994_640.jpg",
                     "alt": "Central park bike loop",
-                    "textcolor": "dark"
+                    "textcolor": "white"
                 },
                 {
                     "name": "Gaming",
                     "description": "I'm very passionate about playing competitive video games",
                     "url": "https://i.pinimg.com/originals/bd/a7/31/bda7319cc3fd803cab5525082988177b.jpg",
-                    "alt": "Fortnite girl with shotgun"
+                    "alt": "Fortnite girl with shotgun",
+                    "textcolor": "white"
                 }
 
             ]
@@ -184,7 +186,7 @@ data = {
             {
                 "name": "Chess",
                 "description": "Intermediate chess player",
-                "url": "https://ibb.co/DwVCh3v",
+                "url": "https://i.ibb.co/r576Ynz/CHess.gif",
                 "alt": "A image of a chess board.",
                 "textcolor": "dark"
             }

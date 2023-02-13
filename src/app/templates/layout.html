@@ -71,14 +71,13 @@
 				  <span class="heroes"> Heroes </span>
 				</h1>
 			  </div>
-			<div>{% include 'team.html' %}</div> 
+			<div>{% include 'team.html' %}</div>
+
+			<div class="container">
+				<div class="mb-4 mt-4">{% block content %}{% endblock %}</div>
+			</div>
+
 		</main>
-		
-		<section id="about">
-			<p><h1>About Page</h1></p>
-		</section>
-	
-	
 		
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

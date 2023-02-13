@@ -1,6 +1,7 @@
-{% extends "card.html" %} {% block body %}
-    <h5 class="card-title">{{ elem.institution }}</h5>
+{% from 'card.html' import card %}
+{% call card() %}
+    <h5 class="card-title text-white">{{ elem.institution }}</h5>
     <h6 class="card-subtitle mb-2 text-muted">{{ elem.degree }}</h6>
-    <p>{{ elem.tenure }}</p>
+    <p class="text-muted">{{ elem.tenure }}</p>
     <p class="card-text">{{ elem.description }}</p>
-{% endblock body %}
+{% endcall %}
