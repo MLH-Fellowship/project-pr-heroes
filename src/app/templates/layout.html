@@ -36,7 +36,7 @@
 		<title>{{ title }}</title>
 	</head>
 
-	<body>
+	<body class="light">
 		<header class="nav-bar">
 			<div class="nav-content">
 			  <a href="/">
@@ -72,6 +72,7 @@
 				</h1>
 			  </div>
 			<div>{% include 'team.html' %}</div> 
+			<button id="toggle-mode">Toggle Mode</button>
 		</main>
 		
 		<section id="about">
@@ -100,7 +101,17 @@
 			<img src="https://avatars.githubusercontent.com/u/11954011?v=4 ">
 		 </div>
 
-		  
+
+		 <script>
+			const toggleButton = document.getElementById('toggle-mode');
+			const body = document.body;
+
+			toggleButton.addEventListener('click', () => {
+			body.classList.toggle('light');
+			body.classList.toggle('dark');
+			});
+		 </script>
+
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
