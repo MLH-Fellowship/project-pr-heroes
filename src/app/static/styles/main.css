@@ -35,7 +35,7 @@ body {
 .nav-bar {
 	width: 100%;
 	display: inline-block;
-	background-color: #1c539f;
+	/*background-color: #1c539f;*/
 	font-family: "Roboto", serif;
 	font-weight: 700 !important;
 	padding-top: 10px;
@@ -71,7 +71,7 @@ body {
 }
 
 .team-section {
-	background-color: #000000 !important;
+	/*background-color: #000000 !important;*/
 	text-align: center;
 	height: 100vh;
 	width: 100vw;
@@ -95,7 +95,7 @@ body {
 	text-align: left;
 }
 .team-section-header hr {
-	color: #222222 !important;
+	/*color: #222222 !important; */
 	background-color: #222222 !important;
 	height: 1px !important;
 }
@@ -162,7 +162,7 @@ body {
 .banner {
 	padding: 20px 0px 50px 0px;
 	height: 150px;
-	background-color: #1d539f;
+	/*background-color: #1d539f;*/
 }
 
 .banner .logo {
@@ -240,3 +240,19 @@ color: var(--text-color);
 background-color: var(--background-color-dark);
 color: var(--text-color-dark);
 }
+#toggle-mode {
+	border-radius: 15px;
+	padding: 10px 20px;
+	font-size: 14px;
+	border: none;
+	color: white;
+	background-color: orange;
+	transition: background-color 0.5s;
+  }
+  
+  #toggle-mode:hover {
+	cursor: pointer;
+	background-color: gray;
+  }
+  
+  
