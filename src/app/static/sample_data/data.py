@@ -84,6 +84,10 @@ data = {
                 {
                     "cityname": "Madrid, Spain",
                     "coordinates": "40.416775,-3.70379"
+                },
+                {
+                    "cityname": "Lisbon, Portugal",
+                    "coordinates": "38.722252,-9.139337"
                 }
             ]
     },
