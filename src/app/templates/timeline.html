@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% from 'card.html' import card %}
+{% block content %}
+
+<div class="col-md-6 mx-auto">
+    <h1>Timeline</h1>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">
+            {{ message }}
+        </div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+</div>
+<form method="POST" action="{{ url_for('timeline') }}">
+    <div class="col-md-6 mb-3 mx-auto">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="col-md-6 mb-3 mx-auto">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div> 
+    <div class="col-md-6 mb-3 mx-auto">
+        <label for="content" class="form-label">Content:</label>
+        <textarea class="form-control" id="content" name="content" rows="2" required></textarea>
+    </div>
+    <div class="col-md-6 mx-auto">
+        <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+    </div>
+</form>
+
+<div class="col-md-12">
+    <h2>Timeline Posts</h2>
+    {% for post in timeline_posts["timeline_posts"] %}
+        {% call card() %}
+            <h5 class="card-title text-white">{{ post.name }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ post.email }}</h6>
+            <p class="card-text">{{ post.content }}</p>
+            <p class="text-muted">{{ post.created_at }}</p>
+            </li>
+        {% endcall %}
+    {% endfor %}
+</div>
+
+{% endblock content %}
