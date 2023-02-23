@@ -6,6 +6,7 @@ from peewee import *
 
 load_dotenv()
 app = Flask(__name__)
+app.config["SECRET_KEY"] = os.getenv("APP_SECRET")
 
 mydb = MySQLDatabase(
     os.getenv("MYSQL_DATABASE"),
