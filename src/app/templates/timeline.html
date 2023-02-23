@@ -35,13 +35,21 @@
 <div class="col-md-12">
     <h2>Timeline Posts</h2>
     {% for post in timeline_posts["timeline_posts"] %}
-        {% call card() %}
-            <h5 class="card-title text-white">{{ post.name }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{ post.email }}</h6>
-            <p class="card-text">{{ post.content }}</p>
-            <p class="text-muted">{{ post.created_at }}</p>
-            </li>
-        {% endcall %}
+    <div class="row no-gutters mt-2">
+        
+        <div class="col-4">
+            <img src="{{ url_for('gravatar', name=post.name) }}" class="card-img img-thumbnail rounded-circle" alt="{{ post.name }}" style="width: 80%; height: auto;">
+        </div>
+        <div class="col-8">
+            {% call card() %}
+                <h5 class="card-title text-white">{{ post.name }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ post.email }}</h6>
+                <p class="card-text">{{ post.content }}</p>
+                <p class="text-muted">{{ post.created_at }}</p>
+                </li>
+            {% endcall %}
+        </div>
+    </div>
     {% endfor %}
 </div>
 
