@@ -6,6 +6,8 @@ import requests
 from flask import render_template, url_for, request, redirect, flash
 from playhouse.shortcuts import model_to_dict
 
+# import code for encoding urls and generating md5 hashes
+import urllib, hashlib
 
 from app import app
 from .models.experience import Experience
@@ -15,6 +17,32 @@ from .models.about import About
 from .models.locations import Locations
 from .models.timelinepost import TimelinePost
 from .static.sample_data.data import data
+
+
+@app.route("/gravatarurl/<name>")
+def gravatar(name):
+
+    size = 200
+    if name not in data:
+        email = "random@email.com"
+        gravatar_url = (
+            "https://www.gravatar.com/avatar/"
+            + hashlib.md5(email.strip().lower().encode("utf-8")).hexdigest()
+            + "?"
+        )
+        gravatar_url += urllib.parse.urlencode({"d": "mp", "s": str(size)})
+        return redirect(gravatar_url)
+
+    email = data[name]["about"][0]["email"]
+    default = data[name]["photourl"]
+    # construct the url
+    gravatar_url = (
+        "https://www.gravatar.com/avatar/"
+        + hashlib.md5(email.strip().lower().encode("utf-8")).hexdigest()
+        + "?"
+    )
+    gravatar_url += urllib.parse.urlencode({"d": default, "s": str(size)})
+    return redirect(gravatar_url)
 
 
 @app.route("/")
