@@ -2,8 +2,10 @@ import os
 import statistics
 
 import folium
-from flask import render_template, url_for, request
+import requests
+from flask import render_template, url_for, request, redirect, flash
 from playhouse.shortcuts import model_to_dict
+
 
 from app import app
 from .models.experience import Experience
@@ -166,6 +168,35 @@ def delete_time_line_post(id):
     number_of_records = timeline_post.delete_instance()
     record["status"] = "Deleted"
     return record
+
+
+@app.route("/timeline", methods=["GET", "POST"])
+def timeline():
+
+    # When a form has been submitted create timeline_post with a POST request to /api/timeline_post
+    if request.method == "POST":
+        name = request.form["name"]
+        email = request.form["email"]
+        content = request.form["content"]
+        endpoint = f"http://127.0.0.1:5000{url_for('post_time_line_post')}"
+        payload = dict(name=name, email=email, content=content)
+        r = requests.post(endpoint, data=payload)
+        if r.ok:
+            flash("Your post has been created", "success")
+        else:
+            return redirect(url_for("index"))
+
+    # If no form has been submitted or the form has sent the info with success display the timeline
+    endpoint = f'http://127.0.0.1:5000{url_for("get_time_line_post")}'
+    r = requests.get(endpoint)
+    if r.ok:
+        timeline_posts = r.json()
+        # return timeline_posts
+        return render_template(
+            "timeline.html", title="Timeline", timeline_posts=timeline_posts
+        )
+    else:
+        return redirect(url_for("index"))
 
 
 def create_map(locations):
