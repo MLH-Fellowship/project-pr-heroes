@@ -1,9 +1,9 @@
 import os
 import statistics
-
+import re
 import folium
 import requests
-from flask import render_template, url_for, request, redirect, flash
+from flask import render_template, url_for, request, redirect, flash, Response
 from playhouse.shortcuts import model_to_dict
 
 # import code for encoding urls and generating md5 hashes
@@ -172,9 +172,19 @@ def folium_map():
 
 @app.route("/api/timeline_post", methods=["POST"])
 def post_time_line_post():
+    if ("name" in request.form and len(request.form['name']) == 0) or ("name" not in request.form ) :
+       
+        return  Response( response="Invalid name", status=400,  mimetype="text/html")
+    
+    elif ("email" in request.form and len(request.form['email']) == 0 or test_email(request.form['email']) == False ) or ("email" not in request.form ) :
+       
+        return  Response( response="Invalid email", status=400,  mimetype="text/html")
+    elif ("content" in request.form and len(request.form['content']) == 0) or ("content" not in request.form ) :
+        return  Response( response="Invalid content", status=400,  mimetype="text/html")    
     name = request.form["name"]
     email = request.form["email"]
     content = request.form["content"]
+
     timeline_post = TimelinePost.create(name=name, email=email, content=content)
     return model_to_dict(timeline_post)
 
@@ -226,6 +236,15 @@ def timeline():
     else:
         return redirect(url_for("index"))
 
+def test_email(email):
+    pattern = re.compile( r"\"?([-a-zA-Z0-9.`?{}]+@\w+\.\w+)\"?")
+    if not re.match(pattern, email):
+        return False
+    return True
+
+
+# my pattern that is passed as argument in my function is here!
+  
 
 def create_map(locations):
 
