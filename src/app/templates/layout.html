@@ -36,7 +36,7 @@
 		<title>{{ title }}</title>
 	</head>
 
-	<body>
+	<body class="light">
 		<header class="nav-bar">
 			<div class="nav-content">
 			  <a href="/">
@@ -49,6 +49,7 @@
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
+			  <button id="toggle-mode">Toggle Theme</button>
 			  <div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 				  <li class="nav-item">
@@ -79,6 +80,45 @@
 
 		</main>
 		
+
+		<!--fix team members "about" section + incorporate stored data in about.py file -->
+		<!--<section id="about"></section>
+		<div class="header-img">
+			<div class="header-tittle">
+			  <h2>Esvin Ruiz</h2>
+			</div>
+			<img src="https://avatars.githubusercontent.com/u/69549001?v=4">
+		  </div>
+
+
+		  
+		  <div class="middle-img">
+			<div class="header-tittle">
+				<h2>Oscar Santos</h2> 
+			</div>
+			<img src="https://avatars.githubusercontent.com/u/38818848?s=400&u=5a7007b59164f33f774fce16c08ee73ce0e1cdb9&v=4">
+		  </div>
+
+
+		 <div class="bottom-img">
+			<div class="header-tittle">
+				<h2>Khalil Collins</h2>
+			</div>
+			<img src="https://avatars.githubusercontent.com/u/11954011?v=4 ">
+		 </div>-->
+
+
+		 <script>
+			const toggleButton = document.getElementById('toggle-mode');
+			const body = document.body;
+
+			toggleButton.addEventListener('click', () => {
+			body.classList.toggle('light');
+			body.classList.toggle('dark');
+			});
+		 </script>
+
+
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
