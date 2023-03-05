@@ -10,7 +10,7 @@ from peewee import *
 
 load_dotenv()
 app = Flask(__name__)
-# app.config["SECRET_KEY"] = os.getenv("APP_SECRET")
+app.config["SECRET_KEY"] = os.getenv("APP_SECRET")
 
 if os.getenv('TESTING') == "true":
     print('Running in test mode')
