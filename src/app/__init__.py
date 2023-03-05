@@ -1,9 +1,10 @@
 
+import os
 from flask import Flask, request
 from dotenv import load_dotenv
 import datetime
 
-import os
+
 
 
 from peewee import *
