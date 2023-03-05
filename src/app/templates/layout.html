@@ -72,9 +72,15 @@
 				  <span class="heroes"> Heroes </span>
 				</h1>
 			  </div>
-			<div>{% include 'team.html' %}</div> 
+			<div>{% include 'team.html' %}</div>
+
+			<div class="container">
+				<div class="mb-4 mt-4">{% block content %}{% endblock %}</div>
+			</div>
+
 		</main>
 		
+
 		<!--fix team members "about" section + incorporate stored data in about.py file -->
 		<!--<section id="about"></section>
 		<div class="header-img">
@@ -111,6 +117,7 @@
 			body.classList.toggle('dark');
 			});
 		 </script>
+
 
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
